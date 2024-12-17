@@ -8,10 +8,11 @@
       <name>International Journal of Engineering Sciences</name>
     </author>
     <category citation-format="numeric"/>
-    <summary>Citation style for IJES with superscript references and formatted bibliography.</summary>
     <updated>2024-12-17T00:00:00Z</updated>
+    <summary>Citation style for IJES with superscript references and formatted bibliography.</summary>
   </info>
 
+  <!-- Macros -->
   <macro name="author">
     <names variable="author">
       <name form="long" initialize-with=". " delimiter=", " and="text"/>
@@ -27,7 +28,7 @@
       <text variable="container-title" font-style="italic"/>
       <group delimiter="(" suffix=")">
         <text variable="volume"/>
-        <text variable="issue"/>
+        <text variable="issue" prefix=" "/>
       </group>
       <group delimiter="–">
         <text variable="page-first"/>
@@ -36,12 +37,14 @@
     </group>
   </macro>
 
+  <!-- Citation -->
   <citation>
-    <layout prefix="" suffix="" delimiter=",">
+    <layout delimiter=",">
       <text variable="citation-number" font-style="sup"/>
     </layout>
   </citation>
 
+  <!-- Bibliography -->
   <bibliography>
     <layout>
       <group delimiter=". ">
@@ -58,3 +61,4 @@
     </layout>
   </bibliography>
 </style>
+
