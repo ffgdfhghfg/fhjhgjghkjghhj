@@ -8,8 +8,8 @@
       <name>International Journal of Engineering Sciences</name>
     </author>
     <category citation-format="numeric"/>
-    <updated>2024-12-17T00:00:00Z</updated>
     <summary>Citation style for IJES with superscript references and formatted bibliography.</summary>
+    <updated>2024-12-17T00:00:00Z</updated>
   </info>
 
   <!-- Macros -->
@@ -61,4 +61,3 @@
     </layout>
   </bibliography>
 </style>
-
