@@ -12,7 +12,7 @@
     <updated>2024-12-17T00:00:00Z</updated>
   </info>
 
-  <!-- Macros -->
+  <!-- Macro Definitions -->
   <macro name="author">
     <names variable="author">
       <name form="long" initialize-with=". " delimiter=", " and="text"/>
@@ -37,14 +37,14 @@
     </group>
   </macro>
 
-  <!-- Citation -->
+  <!-- Citation Section -->
   <citation>
     <layout delimiter=",">
       <text variable="citation-number" font-style="sup"/>
     </layout>
   </citation>
 
-  <!-- Bibliography -->
+  <!-- Bibliography Section -->
   <bibliography>
     <layout>
       <group delimiter=". ">
