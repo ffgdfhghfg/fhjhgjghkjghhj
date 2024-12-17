@@ -9,13 +9,12 @@
     </author>
     <category citation-format="numeric"/>
     <summary>Citation style for IJES with superscript references and formatted bibliography.</summary>
+    <updated>2024-12-17T00:00:00Z</updated>
   </info>
 
-  <!-- Macros -->
   <macro name="author">
     <names variable="author">
       <name form="long" initialize-with=". " delimiter=", " and="text"/>
-      <label form="short" prefix=" (" suffix=")"/>
     </names>
   </macro>
 
@@ -28,7 +27,7 @@
       <text variable="container-title" font-style="italic"/>
       <group delimiter="(" suffix=")">
         <text variable="volume"/>
-        <text variable="issue" prefix=" "/>
+        <text variable="issue"/>
       </group>
       <group delimiter="–">
         <text variable="page-first"/>
@@ -37,14 +36,12 @@
     </group>
   </macro>
 
-  <!-- Citation layout -->
   <citation>
     <layout prefix="" suffix="" delimiter=",">
       <text variable="citation-number" font-style="sup"/>
     </layout>
   </citation>
 
-  <!-- Bibliography layout -->
   <bibliography>
     <layout>
       <group delimiter=". ">
