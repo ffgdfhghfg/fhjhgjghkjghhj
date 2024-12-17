@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <style xmlns="http://purl.org/net/xbiblio/csl" version="1.0">
   <info>
-    <title>Custom IJES Superscript Style</title>
-    <id>https://custom-style.example/IJES_Superscript</id>
-    <link href="https://www.isca.me/IJES/Instruction.php" rel="documentation"/>
+    <title>IJES Superscript Style</title>
+    <id>http://www.isca.me/IJES_Superscript</id>
+    <link href="http://www.isca.me/IJES/Instruction.php" rel="documentation"/>
     <author>
-      <name>Custom CSL Author</name>
+      <name>International Journal of Engineering Sciences</name>
     </author>
     <category citation-format="numeric"/>
-    <summary>A citation style for the International Journal of Engineering Sciences with superscripted references.</summary>
+    <summary>Citation style for IJES with superscript references and formatted bibliography.</summary>
   </info>
 
   <!-- Macros -->
   <macro name="author">
     <names variable="author">
-      <name form="long" initialize-with=". " and="text" delimiter=", "/>
+      <name form="long" initialize-with=". " delimiter=", " and="text"/>
     </names>
   </macro>
 
   <macro name="title">
-    <text variable="title" text-case="sentence"/>
+    <text variable="title" text-case="sentence" suffix=". "/>
   </macro>
 
   <macro name="journal">
@@ -46,12 +46,16 @@
   <!-- Bibliography layout -->
   <bibliography>
     <layout>
-      <text variable="citation-number" prefix="" suffix=". " font-style="sup"/>
-      <group delimiter=", ">
-        <names variable="author" form="long"/>
-        <text macro="title" suffix=". "/>
-        <text macro="journal"/>
-        <date variable="issued" date-parts="year" prefix=", " suffix="."/>
+      <group delimiter=". ">
+        <text variable="citation-number" font-style="sup" suffix=". "/>
+        <group delimiter=", ">
+          <names variable="author">
+            <name form="long" initialize-with=". " delimiter=", " and="text"/>
+          </names>
+          <text macro="title"/>
+          <text macro="journal"/>
+          <date variable="issued" date-parts="year" prefix="(" suffix=")."/>
+        </group>
       </group>
     </layout>
   </bibliography>
