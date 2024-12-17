@@ -15,6 +15,7 @@
   <macro name="author">
     <names variable="author">
       <name form="long" initialize-with=". " delimiter=", " and="text"/>
+      <label form="short" prefix=" (" suffix=")"/>
     </names>
   </macro>
 
@@ -27,7 +28,7 @@
       <text variable="container-title" font-style="italic"/>
       <group delimiter="(" suffix=")">
         <text variable="volume"/>
-        <text variable="issue"/>
+        <text variable="issue" prefix=" "/>
       </group>
       <group delimiter="–">
         <text variable="page-first"/>
